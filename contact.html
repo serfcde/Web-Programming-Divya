@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us page with an advanced form and Google Maps integration">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+            align-items: start;
+        }
+
+        .contact-details {
+            background: white;
+            padding: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-details h3 {
+            margin-bottom: 1em;
+            color: #4CAF50;
+        }
+
+        .contact-details p {
+            margin-bottom: 0.5em;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <a href="myindex.html">Home</a>
+        <a href="navigation.html">Navigation</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+
+    <section>
+        <h2>We’d Love to Hear from You</h2>
+        <div class="contact-container">
+            
+            <form action="#" method="POST" class="contact-form">
+                <h3>Send Us a Message</h3>
+                <input type="text" name="name" placeholder="Your Full Name" required pattern="[A-Za-z ]+" title="Name can only contain letters and spaces">
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10}" title="Enter a 10-digit phone number">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+            
+            <div class="contact-details">
+                <h3>Our Office</h3>
+                <p><strong>Address:</strong> 123 Green Lane, Cityville, Country</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Email:</strong> support@example.com</p>
+                <h3>Find Us Here</h3>
+                <!-- Google Maps Integration -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.83543450989!2d-122.41941538468164!3d37.77492927975953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064a4725f0b%3A0x4a656cd881e0740!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1614977719533!5m2!1sen!2sin" 
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Contact Us Page. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

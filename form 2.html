@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Elements Example</title>
+    <style>
+    </style>
+</head>
+<body>
+    <form>
+        <p style="background-color: aquamarine;">Text Box Example</p>
+        <label for="textbox">Customer ID:</label>
+        <input type="text" id="textbox" name="textbox"><br><br>
+
+        <p style="background-color: antiquewhite;">Radio Button Example</p>
+        <fieldset>
+            <legend>Languages Preferred: </legend>
+            <input type="radio" id="radio1" name="radioGroup" value="option1">
+            <label for="radio1">English</label><br>
+            <input type="radio" id="radio2" name="radioGroup" value="option2">
+            <label for="radio2">Hindi</label><br>
+        </fieldset><br>
+
+        <p style="background-color: aqua;">Check Box Example</p>
+        <fieldset>
+            <legend>Type of Card that you want to access:</legend>
+            <input type="checkbox" id="checkbox1" name="checkboxGroup" value="option1">
+            <label for="checkbox1">Credit Card</label><br>
+            <input type="checkbox" id="checkbox2" name="checkboxGroup" value="option2">
+            <label for="checkbox2">Debit Card</label><br>
+        </fieldset><br>
+
+        <p style="background-color:yellowgreen;">Submit Button Example</p>
+        <label for="selectionBox">State: </label>
+        <select id="selectionBox" name="selectionBox" size="4">
+            <option value="option1">Haryana</option>
+            <option value="option2">Tamil Nadu 2</option>
+            <option value="option3">Punjab</option>
+            <option value="option4">Maharashtra</option>
+            <option value="option5">Kerala</option>
+            <option value="option6">Karnataka</option>
+            <option value="option7">Andhra Pradesh</option>
+        </select><br><br>
+
+        <p style="background-color: rgb(156, 156, 208);">Option Box Example</p>
+        <label for="optionBox">City:</label>
+        <select id="optionBox" name="optionBox">
+            <option value="option1">Gurugram</option>
+            <option value="option2">Noida</option>
+            <option value="option3">Faridabad</option>
+            <option value="option4">Delhi</option>
+            <option value="option5">Chandigarh</option>
+            <option value="option6">Jaipur</option>
+        </select><br><br>
+
+        <p style="background-color: rgb(189, 229, 32);">TextArea Box Example</p>
+        <label for="textarea">Tell about yourself:</label>
+        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br><br>
+        
+        <p style="background-color: rgb(250, 108, 108);">Fieldset Example</p>
+        <fieldset>
+            <legend>Personal Information: </legend>
+            <label for="fieldsetInput">Father's Name:</label>
+            <input type="text" id="fieldsetInput" name="fieldsetInput"><br><br
+            <label for="fieldsetInput2">Mother's Name:</label>
+            <input type="text" id="fieldsetInput" name="fieldsetInput">
+        </fieldset><br>
+
+
+        <label for="datalistInput">Course:</label>
+        <input list="datalistOptions" id="datalistInput" name="datalistInput">
+        <datalist id="datalistOptions">
+            <option value="Btech">
+            <option value="BA">
+            <option value="BCom">
+        </datalist><br><br>
+
+        <label for="dateInput">Date Of Birth:</label>
+        <input type="date" id="dateInput" name="dateInput"><br><br>
+    </form>
+</body>
+</html>
